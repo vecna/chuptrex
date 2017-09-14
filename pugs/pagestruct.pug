@@ -13,9 +13,8 @@ html
 
         script(type='text/javascript', src='/js/vendor/d3.min.js')
         script(type='text/javascript', src='/js/vendor/c3.min.js')
-        script(type='text/javascript', src='/js/vendor/d3-sankey.min.js')
 
-        script(type='text/javascript', src='/js/local/trex.js')
+        script(type='text/javascript', src='/campaign/chuptrex.js')
 
         link(rel='stylesheet', href='/css/bootstrap.css')
         link(rel='stylesheet', href='/js/local/trex.css')
@@ -31,7 +30,7 @@ html
         meta(property='og:type', content='website')
         meta(property='og:description', content='lore ipsum pagestruct.pug')
 
-    body(onload='initializeLanding("gptrex", "informationsfluss Tracking Exposed: "); loadPage();')
+    body(onload='initializeChuptrex({"BR":"brasil","CL":"colombia","CH":"chile","MX":"mexico"}); loadPage();')
 
         nav.navbar.navbar-default.navbar-fixed-top.hidden-xs  
             .container
